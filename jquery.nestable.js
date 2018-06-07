@@ -381,7 +381,7 @@
                     "'": '&#039;'
                 };
 
-                return text + "".replace(/[&<>"']/g, function(m) { return map[m]; });
+                return text.toString().replace(/[&<>"']/g, function(m) { return map[m]; });
             }
 
             function filterClasses(classes) {
